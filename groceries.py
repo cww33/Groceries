@@ -54,16 +54,22 @@ for p in sorted_products:
 
 departments =[]
 for p in products:
-    #departments.append(p["department"])
-    if p["department"] not in departments:
-        departments.append(p["department"])
+    departments.append(p["department"])
+    #if p["department"] not in departments:
+       # departments.append(p["department"])
 
-department_count = len(departments)
+unique_departments = list(set(departments))
+
+
+
+department_count = len(unique_departments)
 
 print("----------")
 print("There are " + str(department_count) + " Departments:")
 print("----------")
 
+for d in unique_departments:
+    print(d)
 
 
 # + All-Seasons Salt ($4.99)
