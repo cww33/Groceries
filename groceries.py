@@ -79,7 +79,7 @@ for d in unique_departments:
         print(d.title() +" (" + str(matching_products_count) + " products)")
 
 
-
+# All code were followed with Professor Rosetti's walkthrough on youtube
 
 
 # + All-Seasons Salt ($4.99)
