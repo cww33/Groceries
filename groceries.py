@@ -52,6 +52,20 @@ for p in sorted_products:
     price_usd = "(${0:.2f})".format(p["price"])
     print(" ... " + p["name"] + price_usd)
 
+departments =[]
+for p in products:
+    #departments.append(p["department"])
+    if p["department"] not in departments:
+        departments.append(p["department"])
+
+department_count = len(departments)
+
+print("----------")
+print("There are " + str(department_count) + " Departments:")
+print("----------")
+
+
+
 # + All-Seasons Salt ($4.99)
 # + Chocolate Fudge Layer Cake ($18.50)
 # + Chocolate Sandwich Cookies ($3.50)
